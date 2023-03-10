@@ -1,14 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Layout</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hmtlcss-responsive-layout</title>
 
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-  
+
+    <header class="background-blue">
+
+        <div class="container flex space-beetween align-items-center">
+
+            <div>
+                <img id="logo" src="img/logo.png" alt="Logo">
+            </div>    
+            
+            <nav>
+                <ul class="color-white" id="hidden-nav">
+                    <li>Planning</li>
+                    <li>Testimonials</li>
+                    <li>Features</li>
+                    <li>About Us</li>
+                    <li id="color-black" class="button-white">Get Started</li>
+                </ul>
+                <i id="bars" class="fa-solid fa-bars"></i>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- SECITION 1 -->
+        <section id="section-1" class="container">
+
+            <div id="card-big" class="card">
+
+                <div id="card-big-2" class="padding-left-right">
+
+                    <div>
+                        <h2 class="color-blue padding-top-medium">Get a demo application</h2>
+
+                        <p class="padding-top-medium font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis id alias magni! Fuga dicta sunt non error dolores voluptatibus, ullam omnis. Cumque recusandae dolore nihil. Fugit voluptatum vitae perferendis!</p>
+
+                        <div class="padding-top-medium"> 
+                        <span id="button-blue">
+                            <i class="fa-brands fa-apple"></i>
+                            App Store
+                        </span> 
+                        </div>
+                    </div>
+
+                    <div class="padding-top-medium padding-left-right flex-end"><img src="img/phone.png" alt="phone"></div>  
+
+                </div>
+            </div>
+
+            <div class="card">
+
+                <div class="padding-left-right padding-bottom">
+
+                    <div class="padding-top-medium text-align-center">
+                        <i class="fa-solid fa-file-code font-size-icon color-blue"></i>
+                    </div>
+
+                    <h2 class="padding-top-medium text-align-center color-blue">Clean Code</h2>
+
+                    <p class="padding-top-medium text-align-center font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis id alias magni! Fuga dicta sunt non error dolores voluptatibus, ullam omnis. Cumque recusandae dolore nihil. Fugit voluptatum vitae perferendis!</p>
+
+                </div>
+
+            </div>
+            
+            <div class="card">
+
+                <div class="padding-left-right padding-bottom">
+
+                    <div class="padding-top-medium text-align-center">
+                        <i class="fa-solid fa-compass-drafting font-size-icon color-blue"></i>
+                    </div>
+
+                    <h2 class="padding-top-medium text-align-center color-blue">Web Design</h2>
+
+                    <p class="padding-top-medium text-align-center font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis id alias magni! Fuga dicta sunt non error dolores voluptatibus, ullam omnis. Cumque recusandae dolore nihil. Fugit voluptatum vitae perferendis!</p>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="padding-left-right padding-bottom">
+
+                    <div class="padding-top-medium text-align-center">
+                        <i class="fa-solid fa-laptop-code font-size-icon color-blue"></i>
+                    </div>
+
+                    <h2 class="padding-top-medium text-align-center color-blue">Developement</h2>
+
+                    <p class="padding-top-medium text-align-center font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis id alias magni! Fuga dicta sunt non error dolores voluptatibus, ullam omnis. Cumque recusandae dolore nihil. Fugit voluptatum vitae perferendis!</p>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="padding-left-right padding-bottom">
+
+                    <div class="padding-top-medium text-align-center">
+                        <i class="fa-solid fa-bullhorn font-size-icon color-blue"></i>
+                    </div>
+
+                    <h2 class="padding-top-medium text-align-center color-blue">Branding</h2>
+
+                    <p class="padding-top-medium text-align-center font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur blanditiis id alias magni! Fuga dicta sunt non error dolores voluptatibus, ullam omnis. Cumque recusandae dolore nihil. Fugit voluptatum vitae perferendis!</p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /SECITION 1 -->
+
+
+        <!-- SECTION 2 -->
+        <section id="section-2">
+
+            <div class="container margin-top section2-container">
+
+                <div id="card-left"> 
+
+                    <div class="padding-top-medium">
+                        <img src="img/planning1.png" alt="planning1">
+                    </div>
+
+                    <div class="padding-top-large font-size line-height">
+
+                        <h2 class="padding-top">Strategic Planning</h2>
+
+                        <p class="padding-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam amet alias voluptas!   Praesentium cumque minus asperiores vel omnis, ipsa   odit laudantium ad, ratione architecto    est dicta quod quam eius!</p>
+                    </div>
+                </div>
+
+                <div class="card-2">
+
+                    <img src="img/planning2.png" alt="">
+
+                    <h3 class="padding-top padding-left-right text-align-center">App Developement</h3>
+
+                    <p class="padding-top padding-bottom padding-left-right text-align-center font-size"><em>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis quibusdam fugiat beatae excepturi sint pariatur placeat qui neque in tempore..</em></p>
+
+                    <div class="text-align-center font-size padding-top padding-bottom">
+                        <a id="arrow" href="#anchor"><i class="fa-solid fa-arrow-down"></i></a>
+                    </div>
+                </div> 
+
+            </div>
+
+        </section>
+
+        <!-- SECTION 3 -->
+        <section class="container text-align-center margin-top font-size line-height">
+            
+            <div>
+                <h3 id="anchor" class="padding-top-medium">TESTIMONIALS</h3>
+
+                <h2 class="padding-top-medium color-violet">We are committed expert partners</h2>
+
+                <p class="padding-top-medium">We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
+            </div>
+
+            <div class="card-3 text-align-center margin-top">
+                <div class="padding-top-medium">
+                    <img class="img-testimonial" src="img/testimonial1.jpg" alt="Testimonial1">
+                </div>
+
+                <div>
+                    <p class="padding-top-medium padding-left-right">
+                        <i class="fa-solid fa-quote-left"></i>
+
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero praesentium magnam rem doloremque quia officiis, blanditiis asperiores placeat! Iusto aliquid modi repudiandae! Doloremque dolorem officiis odio quia tempora corporis!</span>
+
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+
+                    <div class="padding-top-medium name">NAT REYNOLDS</div>
+                </div>
+            </div>
+
+            <div class="card-3 text-align-center margin-top">
+                <div class="padding-top-medium">
+                    <img class="img-testimonial" src="img/testimonial2.jpg" alt="Testimonial2">
+                </div>
+
+                <div>
+                    <p class="padding-top-medium padding-left-right">
+                        <i class="fa-solid fa-quote-left"></i>
+
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero praesentium magnam rem doloremque quia officiis, blanditiis asperiores placeat! Iusto aliquid modi repudiandae! Doloremque dolorem officiis odio quia tempora corporis!</span>
+
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+
+                    <div class="padding-top-medium name">CELIA ALMEDA</div>
+                </div>
+            </div>
+
+            <div class="card-3 text-align-center margin-top">
+                <div class="padding-top-medium">
+                    <img class="img-testimonial" src="img/testimonial3.jpg" alt="Testimonial3">
+                </div>
+
+                <div>
+                    <p class="padding-top-medium padding-left-right">
+                        <i class="fa-solid fa-quote-left"></i>
+
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores vero praesentium magnam rem doloremque quia officiis, blanditiis asperiores placeat! Iusto aliquid modi repudiandae! Doloremque dolorem officiis odio quia tempora corporis!</span>
+
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+
+                    <div class="padding-top-medium name">BOB ROBERTS</div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /SECTION 3 -->
+
+        <!-- SECTION 4 -->
+        <section id="section-4">
+            <h1 class="color-white margin-top padding-top-medium text-align-center">Benefits of working with us</h1>
+
+            <div id="section4-container" class="container line-height padding-bottom">
+
+                <div class="card-4 margin-top">
+                    <div class="padding-left-right">
+
+                        <h2 class="color-violet padding-top-small medium">01</h2>
+
+                        <h3 class="color-violet padding-top-small medium">Hight Quality</h3>
+
+                        <p class="padding-top margin-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae ut similique quaerat unde aspernatur aliquid nesciunt sequi. Similique mollitia possimus, aperiam aut neque dolore inventore minima perferendis nisi animi.</p>
+
+                        <span class="button-violet color-white margin-bottom letter-spacing">more</span> 
+                    </div>
+                </div>
+
+                <div class="card-4 margin-top">
+                    <div class="padding-left-right">
+                        <h2 class="color-violet padding-top-small medium">02</h2>
+
+                        <h3 class="color-violet padding-top-small medium">Creative Team</h3>
+
+                        <p class="padding-top margin-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae ut similique quaerat unde aspernatur aliquid nesciunt sequi. Similique mollitia possimus, aperiam aut neque dolore inventore minima perferendis nisi animi.</p>
+
+                        <span class="button-violet color-white margin-bottom letter-spacing">more</span> 
+                    </div>
+                </div>
+
+                <div class="card-4 margin-top">
+                    <div class="padding-left-right">
+                        <h2 class="color-violet padding-top-small medium">03</h2>
+
+                        <h3 class="color-violet padding-top-small medium">Amazing Results</h3>
+
+                        <p class="padding-top margin-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae ut similique quaerat unde aspernatur aliquid nesciunt sequi. Similique mollitia possimus, aperiam aut neque dolore inventore minima perferendis nisi animi.</p>
+
+                        <span class="button-violet color-white margin-bottom letter-spacing">more</span> 
+                    </div>
+                </div>
+
+                <div class="card-4 margin-top">
+                    <div class="padding-left-right">
+                        <h2 class="color-violet padding-top-small medium">04</h2>
+
+                        <h3 class="color-violet padding-top-small medium">Best Pricing</h3>
+
+                        <p class="padding-top margin-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae ut similique quaerat unde aspernatur aliquid nesciunt sequi. Similique mollitia possimus, aperiam aut neque dolore inventore minima perferendis nisi animi.</p>
+
+                        <span class="button-violet color-white margin-bottom letter-spacing">more</span> 
+                    </div>
+                </div>
+
+                <div class="card-4 margin-top">
+                    <div class="padding-left-right">
+                        <h2 class="color-violet padding-top-small medium">05</h2>
+
+                        <h3 class="color-violet padding-top-small medium">Innovations</h3>
+
+                        <p class="padding-top margin-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae ut similique quaerat unde aspernatur aliquid nesciunt sequi. Similique mollitia possimus, aperiam aut neque dolore inventore minima perferendis nisi animi.</p>
+
+                        <span class="button-violet color-white margin-bottom letter-spacing">more</span> 
+
+                    </div>
+                </div>
+
+                <div class="card-4 margin-top">
+                    <div class="padding-left-right">
+                        <h2 class="color-violet padding-top-small medium">06</h2>
+
+                        <h3 class="color-violet padding-top-small medium">24/7 Supports</h3>
+
+                        <p class="padding-top margin-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae ut similique quaerat unde aspernatur aliquid nesciunt sequi. Similique mollitia possimus, aperiam aut neque dolore inventore minima perferendis nisi animi.</p>
+
+                        <span class="button-violet color-white margin-bottom letter-spacing">more</span> 
+
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <!-- /SECTION 4 -->
+
+        <!-- SECTION 5 -->
+        <section>
+            <div id="section-5-container" class="container padding-top-large padding-bottom">
+
+                <div>
+
+                    <h2 class="color-violet font-size-large">About Us</h2>
+                    
+                    <p class="padding-top-medium font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae ut similique quaerat unde aspernatur aliquid nesciunt sequi. Similique mollitia possimus, aperiam aut neque dolore inventore minima perferendis nisi animi.</p>
+
+                    <p class="padding-top-medium font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, recusandae ut similique quaerat unde aspernatur aliquid nesciunt sequi. Similique mollitia possimus, aperiam aut neque dolore inventore minima perferendis nisi animi.</p>
+
+                </div>
+
+                <div class="padding-top-medium">
+
+                    <div class="img-section-5">
+                        <i class="fa-solid fa-quote-left"></i> 
+                    </div>
+                    
+                    <strong class="color-violet medium padding-top-medium">I help companies praesentium adipisci ea dicta, excepturi officiis eveniet mollitia.</strong>
+                    
+                    <div class="color-white margin-bottom padding-top-medium">
+
+                        <span id="button-violet-section-5" class="button-violet">
+                            <i class="fa-brands fa-linkedin"></i>Find me on linkedin  
+                        </span>
+
+                    </div> 
+
+                </div> 
+            </div>  
+        </section>
+
+        <!-- SECTION 6 -->
+        <section id="section-6">
+
+            <div class="container padding-top-large padding-bottom-large text-align-center color-white">
+
+                <h4 class="font-size">GET STARTED</h4>
+
+                <h3 class="padding-top-medium medium">Simple, Transparent Pricing</h3>
+
+                <h2 class="color-yellow padding-top font-size-large">It's Free!</h2>
+
+                <p class="padding-top-medium font-size">We're still in beta and we will be for awhile. As we add morefunctionality, we'll look into other plans with more controls.</p>
+
+                <div class="padding-top-medium font-size padding-bottom letter-spacing">
+                    <strong class="button-white">Get Started</strong> 
+                </div>
+
+                <span class="padding-top-medium font-size">Copyright 2023 Boolean &#8226; Classe 94 &#8226; <a href="#" class="color-white">Privacy policy</a></span>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container text-align-center padding-top-large padding-bottom-large color-white">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam quasi reiciendis ex deserunt ratione asperiores, iusto quis veritatis perspiciatis.</p>   
+
+                <div class="padding-top-large"><a href="#" class="color-violet">Lorem ipsum</a> dolor sit, amet consectetur</div>
+
+                <a href="#" class="color-violet">Boolean Carrers</a>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
